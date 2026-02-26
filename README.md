@@ -1,73 +1,143 @@
-# Welcome to your Lovable project
+````md
+# 🚀 Programmer Progress Tracker
 
-## Project info
+A **full-stack web application** that helps programmers track their coding practice **topic-wise**, analyze strengths and weaknesses, and visualize progress using interactive dashboards.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+This project is built as an **academic mini-project / portfolio project** inspired by modern coding analytics platforms.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 📌 Project Overview
 
-**Use Lovable**
+The **Programmer Progress Tracker** allows users to:
+- Log solved programming problems
+- Categorize problems by topics such as Arrays, DP, Database, etc.
+- Track difficulty levels
+- View visual analytics to understand learning progress
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## ✨ Features
 
-**Use your preferred IDE**
+- 🔐 User Authentication (Login / Signup)
+- ➕ Add solved programming problems
+- 🧠 Topic-wise tracking (Array, DP, Graph, DB, etc.)
+- 📊 Analytics Dashboard  
+  - Bar chart: Problems per topic  
+  - Pie chart: Topic distribution
+- 🎯 Difficulty-wise analysis (Easy / Medium / Hard)
+- 📅 Track problem-solving history
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Tech Stack
 
-Follow these steps:
+### Frontend
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
+
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- MongoDB (Mongoose)
+
+### Charts
+- Chart.js
+
+---
+
+## 📂 Project Structure
+
+```text
+├── client/          # Frontend (React)
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   └── App.tsx
+│
+├── server/          # Backend (Node + Express)
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   └── index.js
+│
+├── README.md
+└── package.json
+````
+
+---
+
+## ⚙️ How to Run Locally
+
+### Prerequisites
+
+* Node.js (v16+ recommended)
+* npm
+* MongoDB (local or Atlas)
+
+### Steps
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# 1. Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# 2. Navigate into the project
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# 3. Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 4. Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will run at:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+http://localhost:5173
+```
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📊 Analytics Logic
 
-## What technologies are used for this project?
+* Problems are grouped by **topic**
+* Aggregation is used to calculate:
 
-This project is built with:
+  * Total problems per topic
+  * Percentage contribution
+* Data is visualized using charts for better clarity
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 🎓 Use Case
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+* Students preparing for placements
+* Competitive programmers
+* Self-assessment of DSA preparation
+* Resume & portfolio project
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## 🚀 Future Enhancements
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+* 🔥 Daily streak tracking
+* 📈 Platform-wise analytics (LeetCode / CodeChef / HackerRank)
+* 📤 Export progress as PDF
+* 🧑‍🤝‍🧑 Leaderboard
+* 🌐 Production deployment with CI/CD
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+## 🧾 License
+
+This project is created for **educational purposes**.
+You are free to fork, modify, and improve it.
+
+```
+```
